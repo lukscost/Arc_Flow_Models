@@ -1,0 +1,102 @@
+
+car =
+
+     1
+
+Sem custo de estoque e objeto vai ficando mais caro
+$c_{z} = (1 + 2*(t-1))$
+$c_{y} = 0$
+Executando problema: 1 ...
+Iniciando montagem da matriz do modelo ...
+Iniciando o CPLEX ...
+Cplex encontrou uma solucao.
+Não foi armazenado nenhum item no último periodo.
+ 
+Itens, demanda-i, produção-i, i=1,2,3
+\begin{table}[H]
+\centering
+\scalebox{1}{ % tamanho da tabela
+\begin{tabular}{r|r|r|r|r|r|r|r|r|r} % quantidade de colunas
+Itens. & $d_{1i}$ & $pro_{1i}$ & $d_{2i}$ & $pro_{2i}$ & $d_{3i}$ & $pro_{3i}$ & Dem. &  Prod \\
+\toprule
+ 1.00 & 39.00 & 123.00 &  49.00 & 0.00 & 35.00 & 0.00 & 123.00 & 123.00 \\
+ 2.00 & 75.00 & 236.00 &  94.00 & 0.00 & 67.00 & 0.00 & 236.00 & 236.00 \\
+ 3.00 & 13.00 &  42.00 &  17.00 & 0.00 & 12.00 & 0.00 &  42.00 &  42.00 \\
+ 4.00 & 61.00 & 192.00 &  76.00 & 0.00 & 55.00 & 0.00 & 192.00 & 192.00 \\
+ 5.00 & 93.00 & 292.00 & 116.00 & 0.00 & 83.00 & 0.00 & 292.00 & 292.00 \\
+ 6.00 & 71.00 & 224.00 &  89.00 & 0.00 & 64.00 & 0.00 & 224.00 & 224.00 \\
+ 7.00 & 63.00 & 199.00 &  79.00 & 0.00 & 57.00 & 0.00 & 199.00 & 199.00 \\
+ 8.00 & 85.00 & 267.00 & 106.00 & 0.00 & 76.00 & 0.00 & 267.00 & 267.00 \\
+ 9.00 & 79.00 & 249.00 &  99.00 & 0.00 & 71.00 & 0.00 & 249.00 & 249.00 \\
+10.00 & 90.00 & 283.00 & 112.00 & 0.00 & 81.00 & 0.00 & 283.00 & 283.00 \\
+\bottomrule
+\end{tabular}}
+\caption{Demanda e produção }
+\end{table}
+                  
+========================================================
+RECORTAR AQUI
+ 
+ 
+Problema, W, L, quantidade de itens, periodos
+\begin{table}[H]
+\centering
+\scalebox{1}{ % tamanho da tabela
+\begin{tabular}{r|r|r|r|r|r|r|r|r|r|r} % quantidade de colunas
+Prob. & W & L & m & w & $\ell$ & d \\
+\toprule
+1.00 & 250.00 & 250.00 & 10.00 & $[86.00;\ 184.00]$ & $[66.00;\ 167.00]$ & $[12.00;\ 116.00]$ \\
+\bottomrule
+\end{tabular}}
+\caption{Informações do problema; Colunas: 1) Problema;  2) Valor da largura do objeto, W; 3) Valor do comprimento do objeto, L; 4) Quantidade de itens (m); 5) Intervalo da largura dos itens (w); 6) Intervalo do comprimento dos itens (l); 7) Intervalo da demanda de itens (d). }
+\end{table}
+ 
+ 
+Dimensão da matriz:
+m da matriz, m max, n da matriz, n max
+\begin{table}[H]
+\centering
+\scalebox{1}{ % tamanho da tabela
+\begin{tabular}{r|r|r|r|r|r|r} % quantidade de colunas
+Prob. & nr & lnr & nv & lnv & nz \\
+\toprule
+1.00 & 4860.00 & 8343.00 & 5109.00 & 417486.00 & 99.96 \\
+\bottomrule
+\end{tabular}}
+\caption{Dimensão da matriz do modelo; Colunas: 1) Problema;  2) Número de restrições (nr); 3) Limitante no número de restrições (lnr); 4) Número de variáveis; (nv); 5) Limitante no número de variáveis (lnv); 6) $\%$ de elementos nulos (nz). }
+\end{table}
+ 
+ 
+total de objetos, objetos por periodo, fo, foi, tempo modelo, tempo cplex
+\begin{table}[H]
+\centering
+\scalebox{1}{ % tamanho da tabela
+\begin{tabular}{r|r|r|r|r|r|r|r|r|r} % quantidade de colunas
+Prob. & Obj. & $t=1$ & $t=2$ & $t=3$& f.o.r & f.o.i & T. mod. & T. Cplex  \\
+\toprule
+1.00 & 926.83 & 927.00 & 927.00 & 927.00 & 0.00 & 0.00 & 0.25 & 0.01 \\
+\bottomrule
+\end{tabular}}
+\caption{Dados da solução; Colunas: 1) Problema;  2) Total de objetos utilizados; 3) Objetos usados no período $t=1$; 4) Objetos usados no período $t=2$; 5) Objetos usados no período $t=3$; 6) Valor da função-objetivo do problema relaxado (f.o.r.); 7) Valor da função-objetivo do problema inteiro (f.o.i); 8) Tempo para construção da matriz do modelo; 9) Tempo para resolução do modelo. }
+\end{table}
+ 
+ 
+desperdicio da área total \% , exec produ \%, exec em itens
+\begin{table}[H]
+\centering
+\scalebox{1}{ % tamanho da tabela
+\begin{tabular}{r|r|r|r|r} % quantidade de colunas
+Prob. & $(\%$ - desperdício$)$  & $(\%$ - exc. de prod.$)$  & exc. de itens \\
+\toprule
+1.00 & 36.55 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}}
+\caption{Análise da produção; Colunas: 1) Problema;  2) Porcentagem de desperdício da área total dos objetos; 3) Porcentagem do excesso de produção da quantidade total de itens produzidos; 4) Quantidade de itens produzidos a mais. }
+\end{table}
+
+cys =
+
+  1×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {'1) integer optimal solution'}
+

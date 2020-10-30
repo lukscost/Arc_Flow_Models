@@ -1,0 +1,16 @@
+
+Log for 'CPLEX' Clone_2 (V12.10.0.0) Fri Oct 30 17:04:20 2020
+
+Tried aggregator 1 time.
+LP Presolve eliminated 18 rows and 21 columns.
+Aggregator did 4716 substitutions.
+Reduced LP has 126 rows, 372 columns, and 1082 nonzeros.
+Presolve time = 0.02 sec. (2.77 ticks)
+
+Iteration log . . .
+Iteration:     1    Infeasibility =          3070.999999
+Switched to devex.
+Iteration:    57    Objective     =          2904.250000
+
+Dual simplex solved model.
+
