@@ -17,7 +17,7 @@ Arquivo principal: Bidimensional.m
 Pasta: Modelo com k tipos de objetos  
 Arquivo principal: kObjetos.m
 
-  * 5.1.1 - Adaptação do modelo de fluxo em arcos para o PCE bidimensional com múltiplos tipos de objetos para tratar do PCE bidimensional com alguns objetos defeituosos
+  * 5.1.1 - Adaptação do modelo de fluxo em arcos para o PCE bidimensional com múltiplos tipos de objetos para tratar do PCE bidimensional com alguns objetos defeituosos  
 Em implementação...
 
 * 5.2 - Modelo de fluxo em arcos para o PCE bidimensional com múltiplos períodos
