@@ -21,9 +21,9 @@ Arquivo principal: kObjetos.m
 Em implementação...
 
 5.2 - Modelo de fluxo em arcos para o PCE bidimensional com múltiplos períodos \\
-5.2.1 - Modelo que permite estoque de itens
-Pasta: Modelo com mult. periodos e que permite estoque de itens
-Arquivo principal: kPeriodos.m
+  5.2.1 - Modelo que permite estoque de itens
+  Pasta: Modelo com mult. periodos e que permite estoque de itens
+  Arquivo principal: kPeriodos.m
 
 5.2.2 - Modelo que permite estoque de faixas e itens
 Pasta: Modelo com mult. periodos e que permite estoque de itens e faixas
