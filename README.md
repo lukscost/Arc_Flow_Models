@@ -7,7 +7,7 @@ Códigos do MATLAB para resolver alguas versões do problema de corte de estoque
 
 # 3 - O modelo de fluxo em arcos
 
-3.2 - Modelo de fluxo em arcos para o PCE bidimensional
+3.2 - Modelo de fluxo em arcos para o PCE bidimensional  
 Pasta: Modelo de fluxo em arcos tradicional
 Arquivo principal: Bidimensional.m
 
