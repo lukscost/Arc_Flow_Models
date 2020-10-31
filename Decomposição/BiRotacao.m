@@ -1,11 +1,11 @@
-% Costa, L. L. S. (2021), Extensıes do problema de corte de estoque
+% Costa, L. L. S. (2021), Extens√µes do problema de corte de estoque
 % bidimensional modelado como um problema de fluxo em arcos,
 % Tese (doutorado), Universidade Estadual de Campinas,
-% Instituto de Matem·tica EstatÌstica e ComputaÁ„o CientÌfica, Campinas-SP.
+% Instituto de Matem√°tica Estat√≠stica e Computa√ß√£o Cient√≠fica, Campinas-SP.
 
-% Programa que trata do PCE bidimensional, guilhotinado, 2-est·gios.
-% DecomposiÁ„o do modelo de fluxo em arcos e que permite rotaÁ„o de 
-% 90∫ nos itens.
+% Programa que trata do PCE bidimensional, guilhotinado, 2-est√°gios.
+% Decomposi√ß√£o do modelo de fluxo em arcos e que permite rota√ß√£o de 
+% 90¬∫ nos itens.
 
 clc
 clear all
@@ -14,9 +14,9 @@ warning off
 diary('TestesCOM')
 
 mkdir('CSVcom')
-disp('DecomposiÁ„o COM rotaÁ„o')
+disp('Decomposi√ß√£o COM rota√ß√£o')
 
-% script para salvar o caminho das funÁıes do CPLEX
+% script para salvar o caminho das fun√ß√µes do CPLEX
 opl
 
 % matrizes dos dados
@@ -35,7 +35,7 @@ load(por);
 
 disp(['Executando problema: ',num2str(po),' ...'])
 
-% quantidade de itens, sem rotaÁ„o e com 
+% quantidade de itens, sem rota√ß√£o e com 
 mwf = length(w);
 
 % organiza os dados
@@ -65,7 +65,7 @@ disp('Iniciando montagem da matriz do modelo ...')
 tia = toc; 
 Erro = 0;
 catch
-disp('Erro: N„o foi possÌvel criar a matriz do modelo')
+disp('Erro: N√£o foi poss√≠vel criar a matriz do modelo')
 Erro = 1;
 tia = inf;
 end
@@ -104,7 +104,7 @@ yu = xu1(1:mu);
 [m1t,n1t] = size(A1de);
 [m1tq,n1tq] = size(A1eq);
 
-% Para gerar os limitantes na dimens„o da matriz
+% Para gerar os limitantes na dimens√£o da matriz
 % [mmax,nmax] = Ordem(W,L,lr,wr,d)
 dens1 = (numel([A1de; A1eq])-nnz([A1de; A1eq]))*100/numel([A1de; A1eq]);
 dens2 = (numel([A2de; A2eq])-nnz([A2de; A2eq]))*100/numel([A2de; A2eq]);
@@ -128,7 +128,7 @@ UB = inf*ones(n1t,1);
 cys = [cys; [num2str(po), ') ', yi2.cplexstatusstring]]; 
 if isempty(fo2)
     yi2;
-    disp('Erro: Cplex n„o resolveu o problema inteiro.')
+    disp('Erro: Cplex n√£o resolveu o problema inteiro.')
     continue
 end
 
@@ -146,15 +146,15 @@ if ~isempty(xu2)
     exc = exce/sum(d);
 end
 
-% informaÁıes das perdas
+% informa√ß√µes das perdas
 pep = [po perda exc  (sum(r) - sum(d))];
 peT = [peT; pep];
 
 % [W L]
 % [w l d r]
 disp(' ' )
-disp('Itens, demanda-i, produÁ„o-i, i=1,2,3')
-legdi = 'Demanda e produÁ„o';
+disp('Itens, demanda-i, produ√ß√£o-i, i=1,2,3')
+legdi = 'Demanda e produ√ß√£o';
 tit = 'Itens. & $d_{i}$ & $pro_{i}$';
 ProtoP = [(1:mwf)' d  r];
 LatexTab(ProtoP,legdi,tit,[],1,[])
@@ -170,7 +170,7 @@ disp('RECORTAR AQUI')
 disp(' ' )
 disp(' ' )
 disp('Problema, W, L, quantidade de itens, periodos') 
-legdi = 'InformaÁıes do problema';
+legdi = 'Informa√ß√µes do problema';
 tit = 'Prob. & W & L & m & w & $\ell$ & d';
 LatexTab(dork,legdi,tit,[],1,[0 0 0 0 1 0 1 0 1 0])
 csvwrite('CSVcom/WLwld.csv',dork)
@@ -178,8 +178,8 @@ csvwrite('CSVcom/WLwld.csv',dork)
 
 disp(' ' )
 disp(' ' )
-disp('Dimens„o da matriz:') 
-legdi = 'Dimens„o da matriz do modelo';
+disp('Dimens√£o da matriz:') 
+legdi = 'Dimens√£o da matriz do modelo';
 tit = 'Prob. & nr1 & nv1 & nz1 & nr2 & nv2 & nz2';
 disp('m da matriz, m max, n da matriz, n max') 
 LatexTab(amax,legdi,tit,[ ],1,[])
@@ -189,17 +189,17 @@ csvwrite('CSVcom/mnModelo.csv',amax)
 disp(' ' )
 disp(' ' )
 disp('total de objetos, objetos por periodo, fo, foi, tempo modelo, tempo cplex') 
-tit = 'Prob. & f.o.i & T. mod. & T. Cplex ';
-legdi = 'Dados da soluÁ„o';
+tit = 'Prob. & fo Strip & f.o.d & T. mod. & T. Cplex ';
+legdi = 'Dados da solu√ß√£o';
 LatexTab(funT,legdi,tit,[ ],1,[])
 csvwrite('CSVcom/FOs.csv',funT)
 
 
 disp(' ' )
 disp(' ' )
-disp('desperdicio da ·rea total \% , exec produ \%, exec em itens') 
-legdi = 'An·lise da produÁ„o';
-tit = 'Prob. & $(\%$ - desperdÌcio$)$  & $(\%$ - exc. de prod.$)$  & exc. de itens';
+disp('desperdicio da √°rea total \% , exec produ \%, exec em itens') 
+legdi = 'An√°lise da produ√ß√£o';
+tit = 'Prob. & $(\%$ - desperd√≠cio$)$  & $(\%$ - exc. de prod.$)$  & exc. de itens';
 LatexTab(peT,legdi,tit,[ ],1,[])
 csvwrite('CSVcom/Perdas.csv',peT)
 
