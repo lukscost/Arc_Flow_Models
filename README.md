@@ -13,15 +13,15 @@ Arquivo principal: Bidimensional.m
 
 # 5 - Modelos propostos
 
-5.1 - Modelo de fluxo em arcos para o PCE bidimensional com múltiplos tipos de objetos.
+* 5.1 - Modelo de fluxo em arcos para o PCE bidimensional com múltiplos tipos de objetos
 Pasta: Modelo com k tipos de objetos
 Arquivo principal: kObjetos.m
 
-5.1.1 - Adaptação do modelo de fluxo em arcos para o PCE bidimensional com múltiplos tipos de objetos para tratar do PCE bidimensional com alguns objetos defeituosos
+  * 5.1.1 - Adaptação do modelo de fluxo em arcos para o PCE bidimensional com múltiplos tipos de objetos para tratar do PCE bidimensional com alguns objetos defeituosos
 Em implementação...
 
-5.2 - Modelo de fluxo em arcos para o PCE bidimensional com múltiplos períodos \\
-  5.2.1 - Modelo que permite estoque de itens
+* 5.2 - Modelo de fluxo em arcos para o PCE bidimensional com múltiplos períodos
+  * 5.2.1 - Modelo que permite estoque de itens
   Pasta: Modelo com mult. periodos e que permite estoque de itens
   Arquivo principal: kPeriodos.m
 
