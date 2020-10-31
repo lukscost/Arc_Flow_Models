@@ -2,7 +2,7 @@
 
 Códigos do MATLAB para resolver alguas versões do problema de corte de estoque bidimensional, guilhotinado, 2-estágios, com aparo, utilizando o modelo de fluxo em arcos.
 
-Para saber mais dos modelos ou para citação: (tese em finalização)  
+Para saber mais dos modelos ou para citação: (tese em andamento)  
 Costa, L. L. S. (202X), Extensões do problema de corte de estoque bidimensional modelado como um problema de fluxo em arcos, Tese (doutorado), Universidade Estadual de Campinas, Instituto de Matemática Estatística e Computação Científica, Campinas-SP.
 
 # 3 - O modelo de fluxo em arcos
