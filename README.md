@@ -7,7 +7,7 @@ Códigos do MATLAB para resolver alguas versões do problema de corte de estoque
 
 # 3 - O modelo de fluxo em arcos
 
-3.2 - Modelo de fluxo em arcos para o PCE bidimensional  
+* 3.2 - Modelo de fluxo em arcos para o PCE bidimensional  
 Pasta: Modelo de fluxo em arcos tradicional  
 Arquivo principal: Bidimensional.m
 
@@ -48,12 +48,12 @@ Sem permitir rotação, arquivo principal: Bidimensional.m
 Já apresentam o resultado da decomposição e do problema strip cutting.  
  
 * 5.6 - Adaptação do modelo de fluxo em arcos para construir padrões de corte bidimensional  
- * 5.6.1 - Modelo gerador de padrão de corte restrito  
+  * 5.6.1 - Modelo gerador de padrão de corte restrito  
 Pasta: Gerador de padrão  
 Arquivo principal: Bidimensional.m  
 Com e sem rotação, basta alterar o parâmetro rot: "rot = 1" (com rotação).  
 
- * 5.6.2 - Modelo gerador de padrão de corte irrestrito  
+  * 5.6.2 - Modelo gerador de padrão de corte irrestrito  
 Não implementado pois, para os dados usados, alguns tipos de itens ocupam quase todo o objeto e por isso os padrões homogêneos só suportavam um único item e não fazia sentido restringir.
 
 
