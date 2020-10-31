@@ -54,7 +54,7 @@ Arquivo principal: Bidimensional.m
 Com e sem rotação, basta alterar o parâmetro rot: "rot = 1" (com rotação).  
 
   * 5.6.2 - Modelo gerador de padrão de corte irrestrito  
-Não implementado pois, para os dados usados, alguns tipos de itens ocupam quase todo o objeto e por isso os padrões homogêneos só suportavam um único item e não fazia sentido restringir.
+Não implementado pois, para os dados usados, alguns tipos de itens ocupam quase todo o objeto e por isso os padrões homogêneos só suportam um único item e não faz sentido restringir.
 
 
 
