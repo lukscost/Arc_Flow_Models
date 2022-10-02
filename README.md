@@ -51,7 +51,8 @@ Arquivo principal: kObjetos.m
 
 * 5.4 - Modelo de fluxo em arcos para o 2D-PCE que permite rotação de itens  
   Pasta: PCE com ou sem rotação
-  Arquivo principal: Bidimensional.m  
+
+    Arquivo principal: Bidimensional.m  
 
 * 5.5 - Heurística de Decomposição do modelo de fluxo em arcos para o 2D-PCE
   * 5.5.x - Open Dimension 2D-PCE com rotação (Strip-Cutting Problem)
@@ -64,21 +65,21 @@ Arquivo principal: kObjetos.m
   * 5.6.1 - Modelo gerador de padrão de corte restrito  
   Pasta: Gerador de padrão com e sem rotação e restrito 
 
-  Arquivo principal: Bidimensional.m
+    Arquivo principal: Bidimensional.m
 
-  Com e sem rotação, basta alterar o parâmetro rot: "hotrool = 1" (com rotação).  
+    Com e sem rotação, basta alterar o parâmetro rot: "hotrool = 1" (com rotação).  
 
   * 5.6.2 - Modelo gerador de padrão de corte irrestrito  
   Pasta: Gerador de padrão com e sem rotação e irrestrito 
 
-  Arquivo principal: Bidimensional.m
+    Arquivo principal: Bidimensional.m
 
-  Com e sem rotação, basta alterar o parâmetro rot: "hotrool = 1" (com rotação).  
+    Com e sem rotação, basta alterar o parâmetro rot: "hotrool = 1" (com rotação).  
 
   * 5.6.3 - Adaptação do modelo de fluxo em arcos para construir padrões de corte bidimensional para tratar do caso com objeto com defeito.  
   Pasta: Objeto com defeito
 
-  Arquivo principal: Layout
+    Arquivo principal: Layout
 
 
 
