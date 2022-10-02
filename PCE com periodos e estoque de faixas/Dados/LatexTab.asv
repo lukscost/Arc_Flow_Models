@@ -1,0 +1,55 @@
+function LatexTab(Ta,leg,tit,C,sc)
+
+% leg = 'Tabela 1';
+% tit = 'Dados & 1 & 2';
+% X = randi(5,5);
+
+[m,n]=size(Ta);
+
+col = native2unicode(double(unicode2native('&'))*(ones(m,1)));
+esp = native2unicode(double(unicode2native(' '))*(ones(m,1)));
+nlin= native2unicode(double(unicode2native('\'))*(ones(m,1)));
+XD = [];
+
+for i = 1:n
+%    XD = [XD num2str(Ta(:,i),'%4.2f') esp];    
+    XD = [XD num2str(Ta(:,i)) esp];    
+    if i ~= n
+        XD = [XD  col esp];
+    end
+end    
+
+if ~isempty(C)
+XD = [C esp col esp XD nlin nlin];
+else
+XD = [XD nlin nlin];    
+end
+
+disp('\begin{table}[!h]')
+disp('\centering')
+disp(['\scalebox{',num2str(sc),'}{ % tamanho da tabela'])
+a =  '|l|';
+for j=1:n
+    a =  [a 'l|'];
+end
+disp(['\begin{tabular}{', a ,'} % quantidade de colunas'])
+disp('\hline')
+disp('\rowcolor{blue!50}')
+
+for i = 2:m
+    if mod(i,2) ~= 0
+        disp('\rowcolor{gray!50}')
+    end
+    disp(XD(i,:))
+    disp('\hline')
+end    
+
+disp('\end{tabular}}')
+
+if ~isempty(leg)
+    disp(['\caption{ ', leg,' }'])
+end
+
+disp('\end{table}')
+
+end
